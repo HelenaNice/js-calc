@@ -1,7 +1,5 @@
 {{!
-Це код container файлу для index сторінки,
-в якому міститься код, котрий буде віддаватися по шляху (PATH) - "/"
-}}
+повністю празює в браузері через id="output"}}
 
 <main>
 	<div class="calculator">
@@ -9,6 +7,7 @@
 
 		</div>
 		<div class="buttons buttons--big">
+			{{!-- додаємо на властивість onclick  ф-цію calc.add--}}
 			<button onclick="calc.add(9)">9</button>
 			<button onclick="calc.add(8)">8</button>
 			<button onclick="calc.add(7)">7</button>
@@ -22,6 +21,7 @@
 			<button onclick="calc.dot()">.</button>
 		</div>
 		<div class="buttons buttons--small">
+			{{!-- увага на лапки в написані символів та властивості "calc.op('+')">--}}
 			<button onclick="calc.op('+')">+</button>
 			<button onclick="calc.op('-')">-</button>
 			<button onclick="calc.op('*')">*</button>
